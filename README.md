@@ -9,7 +9,7 @@ Fitting previous approaches to mitigate such weaknesses are not feasible for LLM
 Instead of crafting LLMs to better work with the summarization task, we use LLMs to address the challenges for meeting summaries directly by refining given summaries.
 
 <p align="center">
-<img src="results/Main_Figure.png" alt="Main_Figure">
+<img src="results/Main.png" alt="Main_Figure">
 </p>
 
 ## Results
