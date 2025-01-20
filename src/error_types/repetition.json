@@ -1,0 +1,15 @@
+{
+    "definition": "Repetition in text refers to the unnecessary recurrence of information that has already been presented. This redundancy can manifest as verbatim repetition of phrases or sentences, or more subtle forms such as paraphrasing previously stated ideas without introducing new insights. While some repetition is used for emphasis or clarity, excessive redundancy leads to a decrease in textual quality by diluting the content's impact and wasting the reader's time. Effective communication should strike a balance, reinforcing key points without compromising the conciseness and engagement of the narrative.",
+    "example": {
+        "low": {
+            "summary": "Renewable energy is essential for sustainable development. The importance of renewable energy sources, such as solar and wind, cannot be overstated for sustainable development.",
+            "score": "1",
+            "explanation": "This example shows low severity repetition. It reiterates the importance of renewable energy for sustainable development, using slightly different phrasing. The repetition here serves to emphasize the critical role of renewables but does not significantly detract from the text's overall quality or readability. It slightly reinforces the message without overburdening the reader with unnecessary redundancy."
+        },
+        "high": {
+            "summary": "Machine learning models are increasingly used in finance. Machine learning applications in finance include algorithms for stock trading. Stock trading algorithms, which are a form of machine learning, have become popular in finance. These models, which are used in finance, utilize machine learning for various applications such as stock trading.",
+            "score": "5",
+            "explanation": "This text exhibits high severity repetition. It redundantly emphasizes 'machine learning in finance' and 'stock trading algorithms' without introducing new information or perspectives in each mention. The excessive recurrence of these terms and concepts bloats the text and significantly reduces its informative value, making it tedious and unengaging for the reader."
+        }
+    }
+}

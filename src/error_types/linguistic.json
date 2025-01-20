@@ -1,0 +1,18 @@
+{
+    "definition": "Linguistic inaccuracy in summarization refers to the use of language that excessively disturbs the meaning of the word, sentences, or content. Further, language that does not fit the context, such as jargon for a business meeting summary, may be considered an error. This can involve grammatical errors, misapplication of vocabulary, stylistic discrepancies. Words with close or overlapping meanings are not an error. Instances, that can fall under the concept of disrupting coherence are no error. Again, confusing words are not an error. Omission of content does not count towards an error and is handled in another instance. Do not look and report omission errors here.",
+    "example": {
+        "high": {
+            "transcript": "CEO: 'We must absolutely avoid pursuing this risky strategy at all costs. The financial risks are simply too high.'\nCFO: 'Completely agree. It's irresponsible to proceed given the current financial projections.'",
+            "summary": "The CEO remarked we should dodge this risky strategy because the financial risks are super high.",
+            "score": "5",
+            "explanation": "This summary suffers from high severity linguistic inaccuracy due to inappropriate and casual language use that misfits the formal business context. Words like 'remarked' and 'dodge' along with 'super high' are less formal and can diminish the gravity of the message conveyed by the CEO and CFO. The tone is overly casual and might not accurately convey the seriousness of the financial risk discussed, which can affect how the message is perceived by stakeholders."
+        },
+        "low": {
+            "transcript": "Project Manager: 'Given the complexity of the situation, we need to proceed with extreme caution to avoid potential pitfalls.'\nTeam Lead: 'Agreed. Ensuring we navigate this carefully is critical to our success.'",
+            "summary": "The project manager mentioned moving forward with caution due to the situation's complexity.",
+            "score": "1",
+            "explanation": "This summary exhibits low severity linguistic inaccuracy. The use of 'mentioned' in place of a stronger directive like 'stated' or 'emphasized' slightly weakens the urgency and importance of the caution needed. The word choice here reduces the imperative tone intended in the original discussion but does not mislead about the actions to be taken or the reasons behind them. The summary remains factually accurate but the change in verb could subtly alter the perceived level of caution recommended."
+        }
+    }
+}
+

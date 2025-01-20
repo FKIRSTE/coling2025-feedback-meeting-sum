@@ -1,0 +1,17 @@
+{
+    "definition": "Irrelevance in text summarization refers to the inclusion of content that does not contribute to a clear and concise understanding of the primary discussion points, decisions, or actions outlined in the original meeting. This may involve diverging into tangential topics, over-emphasizing minor details, or introducing information that, while factually correct, does not serve the purpose of the summary or meet the needs of the audience. Consider an error if there is content that is far from the main topics discussed and that is likely to be not helpful to stakeholders. Redundancy, confusion, simplification, and misrepresentation are not part of what should be detect. It is only about if the information stated in the summary are relevant or not.",
+    "example": {
+        "high": {
+            "transcript": "Marketing Director: 'Let's focus today on our strategy for the upcoming product launch. We need to finalize our marketing tactics and set our budget allocations for the next quarter.'\nTeam Member: 'Agreed. We should concentrate on digital marketing and social media engagement to maximize outreach.'",
+            "summary": "During the meeting, there was an extensive discussion about the history of product launches at the company, recounting various successes and failures over the past decade.",
+            "score": "5",
+            "explanation": "This summary is highly irrelevant as it diverts entirely from the crucial topics discussed—upcoming product launch strategies and budget planning—focusing instead on historical data that, while related to product launches, does not address the immediate strategic needs or decisions being discussed. This diversion dilutes the summary's relevance to the meeting's goals and can mislead stakeholders about the meeting's content and focus, leading them to believe that the meeting was a historical review rather than forward-looking planning."
+        },
+        "low": {
+            "transcript": "Sales Manager: 'We need to review and adjust our sales targets immediately based on the latest market analysis. Our focus should be on key customer segments that have shown growth potential.'\nData Analyst: 'I've compiled the latest figures showing shifts in customer preferences and market dynamics which will help us target effectively.'",
+            "summary": "The meeting covered the need to adjust sales targets, with a brief mention of recent market trends and a note on customer segment focus.",
+            "score": "1",
+            "explanation": "In this summary, the mention of 'recent market trends' introduces a slight irrelevance—it elaborates on a detail that, while related, was not a primary focus of the discussion about adjusting sales targets based on specific customer segment data. This additional information, though not significantly detracting from the overall message, introduces elements that were not emphasized in the actual meeting. However, the core decision about adjusting sales targets is still clear, and the added detail does not confuse the main objectives, thus constituting a low severity of irrelevance."
+        }
+    }
+}

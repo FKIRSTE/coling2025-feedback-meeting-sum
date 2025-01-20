@@ -1,0 +1,9 @@
+{
+    "fb_reasoning": true,
+    "fb_correction": false,
+    "fb_cot": true,
+    "transition_protocol": "feedback",
+    "rf_transcript": false,
+    "rf_cot": true,
+    "rf_correction": false
+}

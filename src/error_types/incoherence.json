@@ -1,0 +1,15 @@
+{
+    "definition": "Incoherence in text refers to the presence of elements that disrupt the logical, sequential, and thematic flow of content. It manifests through disjointed ideas, illogical progression, contradictions, or irrelevant information, which impair the reader's ability to understand or follow the intended message. A coherent text should maintain topic relevance, logical connections between sentences and paragraphs, and clarity in communication. Do not consider repetition and redundnancy here.",
+    "example": {
+        "low": {
+            "summary": "The recent study on climate change provides compelling evidence of rising sea levels. Additionally, many cities are considering more green spaces to combat urban heat. While unrelated, urban planning also affects wildlife.",
+            "score": "1",
+            "explanation": "This text has minor incoherence due to a slight logical jump between climate change, urban heat, and urban planning's effect on wildlife. The ideas are somewhat connected under the broad theme of environmental concerns, but the transition between them is abrupt. The overall message remains understandable, making the severity low."
+        },
+        "high": {
+            "summary": "Advanced research in AI has led to new algorithms. Breakfast cereals come in many flavors. These algorithms improve data processing speeds. Many people enjoy breakfast as the most important meal of the day.",
+            "score": "5",
+            "explanation": "This example exhibits high severity incoherence. The text contains abrupt topic shifts from AI research to breakfast cereals without logical connection or thematic relevance. The disjointed topics disrupt the narrative flow and coherence, making the text confusing and difficult to follow. The severity is rated high because the lack of coherence significantly impairs comprehension and continuity."
+        }
+    }
+}

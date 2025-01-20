@@ -1,0 +1,17 @@
+{
+    "definition": "Partial omission in the context of meeting summarization occurs when the summary acknowledges key topics or issues discussed in the meeting but fails to adequately detail critical aspects of these discussions. This might include omitting specifics about decisions, actions required, or important nuances and arguments that affect the understanding or implementation of these decisions. Such omissions can lead to incomplete, shallow, or skewed representations of the meeting, potentially resulting in misinformed decisions or actions based on the summary. The severity of a partial omission depends on the importance of the omitted details to the overall context and objectives of the meeting.",
+    "example": {
+        "low": {
+            "transcript": "Let's move on to the updates on our current projects. The main issue we've encountered is a series of delays in the software development phase. These delays are primarily due to unforeseen software bugs and some integration challenges with third-party services. Our team is actively working on these issues, and we are confident in resolving them promptly.",
+            "summary": "Updates were given on the progress of the current projects, with a focus on the delays in the software development phase.",
+            "score": "1",
+            "explanation": "This represents low severity partial omission. While the summary captures the main issue of delays in the project, it omits specific details about the causes of these delays. Although these specifics are useful for a complete understanding, their omission does not drastically change the fundamental understanding of the project's status as being delayed, nor does it severely impact the actions to be taken by those not present at the meeting."
+        },
+        "high": {
+            "transcript": "Good morning, everyone. Today, we need to address the proposed increase in the marketing budget. After analyzing current trends and performance, the proposal is to increase the marketing budget by 50%. This increase will primarily fuel our new digital marketing campaign targeting Europe and North America. We believe this strategic focus will significantly boost our sales, and we plan to reassess this move after the first quarter to evaluate its impact on our growth metrics.",
+            "summary": "The committee agreed to increase the marketing budget to support new initiatives.",
+            "score": "5",
+            "explanation": "This example shows high severity partial omission because the summary fails to specify the significant increase percentage, the targeted geographical focus of the marketing campaign, and the strategic plan for reassessment. These omissions leave out critical details necessary for understanding the scope and strategic intent of the budget increase, which could lead to significant misalignment in expectations and preparations among team members."
+        }
+    }
+}

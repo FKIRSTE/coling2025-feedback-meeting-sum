@@ -1,0 +1,17 @@
+{
+    "definition": "Intrinsic hallucination means that the summary misrepresents information and does not align with or even contradict the content discussed in the transcript. So the overall facts are right but there are details that do not add up. If there is content completely new in the summary and not present in the transcript, it is not considered as error. You only look for when the details are wrong, such as a wrong date, name, or place. It is simply about the question, if the information stated in the summary aligns with the transcript for the details. Since we consider a summary, it is not an error, if the summary is shorter and more straight forward. Do not report omission of content as an error here.",
+    "example": {
+        "high": {
+            "transcript": "Project Manager: 'Given the unresolved software bugs, it's prudent to delay the product launch to Q3. We need more time to ensure everything is up to our standards.'\nTechnical Lead: 'I agree. Pushing the launch to Q3 gives us a buffer to fix these issues thoroughly.'",
+            "summary": "The team decided to advance the product launch to Q2, confident that all software issues have been resolved.",
+            "score": "5",
+            "explanation": "This is a high severity example of intrinsic hallucination. The summary not only incorrectly reports the timing of the product launch but also falsely claims that software issues have been resolved, directly contradicting the actual decisions and status discussed in the meeting. Such a severe misrepresentation could lead to significant misunderstandings and poor decision-making based on the inaccurate information."
+        },
+        "low": {
+            "transcript": "Marketing Director: 'We all agree that our marketing efforts need to be ramped up. We haven't decided on a specific strategy yet, but we need more engagement across the board.'\nTeam Member: 'That's right, we should explore various channels and see which ones will be most effective before making any specific commitments.'",
+            "summary": "The meeting concluded with a decision to intensify social media marketing efforts.",
+            "score": "1",
+            "explanation": "This example shows low severity intrinsic hallucination. The summary inaccurately specifies 'social media marketing' as the strategy decided upon, which is a fabrication but doesn't deviate wildly from the general agreement on increasing marketing efforts. While it introduces an unfounded detail, it does not fundamentally misrepresent the overall direction of the meeting's conclusion, thus posing a lesser threat to decision-making."
+        }
+    }
+}

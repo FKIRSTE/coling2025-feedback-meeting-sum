@@ -1,0 +1,17 @@
+{
+    "definition": "Total omission in meeting summarization refers to the complete absence of key points, discussions, decisions, or actionable items that were addressed during the meeting from the resulting summary. Such omissions can significantly affect the utility and accuracy of the summary, as they fail to capture essential elements that may be critical for understanding the context or executing follow-up tasks. Omissions can be due to various factors including the summarization model's limitations in understanding context, importance of the content, or errors in identifying key information. A high-quality summary must ensure that all significant and relevant content is represented to provide a faithful and functional recap of the meeting.",
+    "example": {
+        "low": {
+            "transcript": "In today's session, we're focusing on our sales performance over the last quarter and our strategies to boost market share. We'll explore targeted marketing tactics and pricing adjustments. Before we conclude, I'd also like to quickly mention that we're planning a staff training session next month to enhance our team's product knowledge and sales techniques. More details on that will follow.",
+            "summary": "The meeting addressed the monthly sales figures and discussed strategies to increase market share.",
+            "score": "1",
+            "explanation": "This is an example of low severity total omission. While the upcoming staff training session was omitted, its absence is not critical to the understanding of the main points of the meeting, which focused on sales figures and market strategies. The omitted information was peripheral and not immediately actionable, thus having a minor impact on the summary’s overall utility."
+        },
+        "high": {
+            "transcript": "Today's agenda covers several key points. First, we need to review our project deadlines and departmental resource allocations. Following that, we must discuss and approve a new strategic initiative involving a partnership with Innovatech Inc., which will significantly alter our budget allocation for the next fiscal year. Additionally, we will address the upcoming changes in project leadership to ensure a smooth transition.",
+            "summary": "The team discussed the upcoming project deadlines and departmental resource allocation.",
+            "score": "5",
+            "explanation": "This summary exhibits high severity of total omission as it completely misses crucial decisions such as the approval of a strategic partnership, budget adjustments, and leadership changes. These omissions could lead to significant misunderstandings or a lack of preparedness for future steps among the team members not present at the meeting."
+        }
+    }
+}

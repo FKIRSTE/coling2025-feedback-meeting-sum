@@ -1,0 +1,18 @@
+{
+    "definition": "Extrinsic hallucination are model generations that ignore the source material altogether and introduce content not present in the original transcript. So if there is something completely new in the summary that was never discussed in the meeting, that would be an extrinsic hallucination. However, if only details are wrong, such as a date or a name, that would be not an error. This error is simplay about if the summary is completely different from the transcript or not.",
+    "example": {
+        "high": {
+            "transcript": "Finance Manager: 'We need to look closely at our expenditures from last quarter and make necessary adjustments. Let's ensure our budget aligns with our projected revenue for the upcoming quarter.'\nBudget Analyst: 'I agree. I'll draft a revision that reflects our discussion today, focusing on areas where we overspent and proposing cuts as needed.'",
+            "summary": "The board approved a new initiative to enter the Asian market next year, allocating a substantial budget for market research and initial operations.",
+            "score": "5",
+            "explanation": "This example displays high severity extrinsic hallucination. The summary introduces a major strategic decision and specific plans about entering the Asian market, which are completely absent from the original discussion. This type of error could lead to significant miscommunication and misdirection within the company, as it falsely introduces a major business move."
+        },
+        "low": {
+            "transcript": "HR Manager: 'We're assessing the current remote work policies to see what updates might be needed to better support our staff.'\nHR Specialist: 'That sounds good. We should gather some feedback on what's working and what isn't, so we can make informed decisions.'",
+            "summary": "The HR department will conduct a survey to gather employee feedback on remote work preferences.",
+            "score": "1",
+            "explanation": "This represents a low severity extrinsic hallucination. The summary introduces a plausible but unmentioned action (conducting a survey) related to the topic of remote work policy updates. While this addition is not based on the actual transcript, it is a minor extension that could be seen as a logical next step, even if it wasn't specifically discussed. This low severity hallucination does not drastically mislead but still introduces unverified content."
+        }
+    }
+}
+

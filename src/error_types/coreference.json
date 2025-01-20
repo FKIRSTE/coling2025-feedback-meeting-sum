@@ -1,0 +1,17 @@
+{
+    "definition": "Coreference errors in meeting summarization occur when the model fails to correctly resolve references to participants or entities mentioned in a discussion. This could involve misattributing statements, opinions, or actions to the wrong meeting participants. It is not an error, if the generated summary does omitt a coreference. General attribution of statements or actions to the group rather than individuals is not an error! It is not an error, if you beliefe that the summary made up some content or may be confusing. However, it is an error only if you are sure, that a stated reference to a person or group is wrong. These errors undermine the accuracy of the summary by creating confusion about who is doing what and potentially misrepresenting the positions or contributions of individuals involved.",
+    "example": {
+        "low": {
+            "transcript": "Tom: 'Do we have an update on the deadline extension? Who's handling that?' \n  Jane: 'I've got it covered, Tom. I'll make sure we meet the extended deadline.'",
+            "summary": "Tom asked about the deadline extension, which Jane said she would handle.",
+            "score": "1",
+            "explanation": "Here, the severity of the coreference error is low. The summary slightly simplifies the exchange without fully attributing the direct speech to Jane, but it maintains the accuracy of the action and the involved parties. Although it doesn't capture the direct 'reply' from Jane, it does not misattribute or significantly alter the meaning of the interaction, preserving the main point of the conversation."
+        },
+        "high": {
+            "transcript": "John: 'We really need to update our budget proposal for the upcoming fiscal quarter. It's urgent that we address this now.' \n Sarah: 'Absolutely, John. I agree. We should also review last year’s expenditures to see where we can adjust.'",
+            "summary": "Sarah mentioned the need for an updated budget proposal and emphasized the urgency because of the upcoming fiscal quarter. She agreed with herself and suggested adding a review of last year's expenditures.",
+            "score": "5",
+            "explanation": "This example exhibits high severity of coreference error. The summary incorrectly attributes both the initial comment and the agreement to Sarah, whereas the original discussion clearly distinguishes between John's and Sarah's contributions. This misattribution not only confuses the narrative about who said what but also significantly misrepresents the involvement and positions of the participants, potentially affecting decisions or perceptions based on the summary."
+        }
+    }
+}

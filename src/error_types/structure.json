@@ -1,0 +1,17 @@
+{
+    "definition": "Misrepresentation of order in summarization occurs when the summary inaccurately reflects the chronological or logical sequence of topics, discussions, or decisions from the original meeting. This error involves reordering the elements discussed such that it misleads about the dependencies of topics. It is no error, if the summary simplifies the structure of the dialogue to an easier understandable form, as long as the main content is preserved. It is expected and not an error, that the summary simplifies the order of events.",
+    "example": {
+        "high": {
+            "transcript": "Finance Manager: 'Let's start by reviewing the budget from last quarter. We'll identify the necessary adjustments for the upcoming quarter based on our performance.'\nTeam: [Discussion of budget details and adjustments]\nFinance Manager: 'With these adjustments in mind, we can now consider additional funding for new initiatives if feasible.'",
+            "summary": "The finance team discussed funding new initiatives before making necessary adjustments based on last quarter's budget review.",
+            "score": "5",
+            "explanation": "This summary incorrectly reverses the order of discussions. The original meeting started with a review of the last quarter's budget and subsequent adjustments, which then informed the discussion on potential funding for new initiatives. By reversing these events, the summary misleads about the logical progression and dependencies of the topics discussed. The misrepresentation of order might lead stakeholders to believe that decisions about new initiatives preceded budget adjustments, potentially causing confusion about the priorities and process of decision-making."
+        },
+        "low": {
+            "transcript": "HR Manager: 'First, we need to assess our current remote work policies and gather feedback from all departments.'\nHR Specialist: 'Based on the feedback, we will then update our policy to better accommodate our team's needs.'",
+            "summary": "The HR department will update the remote work policy and then gather feedback from all departments to assess its effectiveness.",
+            "score": "1",
+            "explanation": "This summary presents a low severity error by reversing the order of actions related to the remote work policy updates. While the actual discussion planned to first gather feedback and then update the policy, the summary suggests that the policy will be updated before feedback is collected. This misrepresentation does not drastically alter the nature of the work being done but could imply a different approach to policy development, where feedback seems to assess rather than inform the updates."
+        }
+    }
+}
